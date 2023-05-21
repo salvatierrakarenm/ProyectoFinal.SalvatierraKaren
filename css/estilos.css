@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: mistyrose;
+    font-family: inherit;
+    font-size: 1rem;
+
+}
+
+
+.contenedorGrid {
+    display: grid;
+
+}
+
+.contenedorHijo1 {
+    grid-area: 1 / 1 / 2 / 2;
+
+}
+
+.contenedorHijo2 {
+    grid-area: 2 / 1 / 3 / 2;
+    justify-content: space-evenly;
+    height: fit-content;
+    grid-column: span 1;
+
+}
+
+
+.contenedorHijo3 {
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+h1 {
+    text-align: center;
+    padding: 10px;
+    margin: 40px;
+    list-style: none;
+    position: static;
+    letter-spacing: 2px;
+}
+
+header {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.titulo {
+    font-size: 3rem;
+    text-align: center
+}
+
+.menu {
+    display: flex;
+    padding: 1rem;
+    margin: 40px;
+    list-style: none;
+    position: static;
+    letter-spacing: 2px;
+    justify-content: space-evenly;
+    border: solid 2px black;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease-in-out;
+}
+
+.menu a:hover {
+    color: gray;
+}
+
+article {
+    text-align: center;
+    font-size: 25px;
+}
+
+.contenedorHome {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+}
+
+.portadaHomeUno {
+    height: 700px;
+    width: 650px;
+    padding-top: 5px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    border-radius: 25px;
+
+}
+
+.portadaHomeDos {
+    height: 700px;
+    width: 680px;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-right: 20px;
+    padding-bottom: 25px;
+
+}
+
+.contenedorPropaganda {
+    padding-top: 50px;
+    border: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    font-size: larger;
+    letter-spacing: inherit;
+    line-height: 1.7;
+
+
+}
+
+.contenedorPromos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 7rem;
+
+}
+
+.tituloPromo {
+    display: flex;
+    flex-direction: column;
+    background-color: peachpuff;
+    color: palevioletred;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+.imagenpromoUno {
+    width: 600px;
+    height: 700px;
+    border-radius: 20px;
+}
+
+.imagenpromoDos {
+    width: 600px;
+    height: 700px;
+    border-radius: 20px;
+}
+
+.contenedorAbrigos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 100px
+}
+
+.imagenChica {
+    width: 500px;
+    height: 500px;
+    padding-top: 5px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+.contenedorRemeras {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.imagenRemera {
+    width: 550px;
+    height: 550px;
+    padding-top: 5px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+
+}
+
+.contenedorPantalones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.imagenPantalon {
+    width: 550px;
+    height: 550px;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.contenedorIngresos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.imagenIngresos {
+    width: 550px;
+    height: 550px;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+footer {
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: rosybrown;
+    color: black;
+    padding: 20px 0;
+    text-align: center;
+
+}
+
+.contenedorFinal {
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.footerLink {
+    padding-right: 10px;
+    padding-left: 10px;
+    color: black
+}
+
+.contenedorTerminos {
+    flex-wrap: wrap;
+    padding: 25px;
+    margin: 20px;
+}
+
+.parrafoContenido {
+    margin: 5px;
+    padding: 5px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.contenedorNosotros {
+    padding: 15px;
+    margin: 20px;
+    font-size: larger;
+}
+
+.contenedorPreguntas {
+    padding: 25px;
+    margin: 20px;
+    font-size: 16px;
+}
+
