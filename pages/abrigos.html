@@ -1,55 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../css/estilos.css">
-            <title> IN THE MOON </title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title> IN THE MOON </title>
 </head>
 
 
-    <body>
+<body>
 
-        <header>
-            <h1 class="titulo">
-                <strong> 
-                IN THE MOON
-                </strong>
-            </h1>
-            
-        </header>
-        
-        <nav>
-            
-            <ul class="menu">
+    <div class="conteiner">
 
-                <li>
-                    <a href="../index.html"> Inicio </a>
-                </li>
-                <li>
-                    <a href="./abrigos.html"> Abrigos </a>
-                </li>
-                <li>
-                    <a href="./remeras.html"> Remeras </a>
-                </li>
-                <li>
-                    <a href="./pantalones.html"> Pantalones </a>
-                </li>
-                <li>
-                    <a href="./nuevosingresos.html"> Nuevos Ingresos </a>
-                </li>
-            
-                </ul>
+        <div class="row">
 
-        </nav>
+            <div class="col-12">
 
-        <main> 
+                <header>
+                    <h1 class="titulo">
+                        <strong>
+                            IN THE MOON
+                        </strong>
+                    </h1>
 
+                </header>
+
+                <nav class="navbar navbar-expand-md justify-content-center">
+                    <div class="contenedorNav">
+                        <div class="container-fluid">
+
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./abrigos.html">Abrigos</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./remeras.html">Remeras</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./pantalones.html">Pantalones</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./nuevosingresos.html">Nuevos Ingresos</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <div class="col-12">
             <h1> Abrigos </h1>
             <!-- Contenedor de los abrigos -->
             <div class="contenedorAbrigos">
-            <!--  Contenedores para precio y descripcion -->
+                <!--  Contenedores para precio y descripcion -->
                 <div>
                     <img class="imagenChica" src="../imagenes/abrigo/abrigo1.jpg" alt="Abrigo temporada 1">
                 </div>
@@ -58,40 +80,44 @@
                     <img class="imagenChica" src="../imagenes/abrigo/abrigo2.jpg" alt="Abrigo temporada 2">
                 </div>
 
-                <div>    
+                <div>
                     <img class="imagenChica" src="../imagenes/abrigo/abrigo3.jpg" alt="Abrigo temporada 3">
                 </div>
 
-                <div>    
+                <div>
                     <img class="imagenChica" src="../imagenes/abrigo/abrigo4.jpg" alt="Abrigo temporada 4">
                 </div>
             </div>
-        </main>
-        
-        <footer>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="col-12">
 
             <h3> Suscribite a nuestro newsletter </h3>
 
-                    <br>
+            <br>
 
-                <div class="contenedorFinal">
+            <div class="contenedorFinal">
 
-                    <a class="footerLink" href="sobrenosotros.html"> Sobre Nosotros. </a>
+                <a class="footerLink" href="sobrenosotros.html"> Sobre Nosotros. </a>
 
-                    <a class="footerLink" href="preguntasfrecuentes.html"> Preguntas Frecuentes. </a>
+                <a class="footerLink" href="preguntasfrecuentes.html"> Preguntas Frecuentes. </a>
 
-                    <a class="footerLink" href="preguntasfrecuentes.html"> Terminos y Condiciones. </a>
+                <a class="footerLink" href="preguntasfrecuentes.html"> Terminos y Condiciones. </a>
 
-                </div>
+            </div>
 
-                    <br> 
+            <br>
 
-                        <p>In the moon © 2023</p>
+            <p>In the moon © 2023</p>
+        </div>
+    </footer>
 
-        </footer>
-        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
 
-    </body>
-
-            
 </html>
