@@ -151,7 +151,7 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 100px
+    margin: 100px;
 }
 .contenedorPropaganda {
     padding-top: 50px;
@@ -198,6 +198,7 @@ p {
     padding-right: 10px;
     padding-bottom: 10px;
     padding-left: 10px;
+
 }
 
 .contenedorIngresos {
