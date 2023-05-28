@@ -22,11 +22,13 @@ h1 {
     letter-spacing: 2px;
 
 }
-h6{
+
+h6 {
     justify-content: center;
-    font-family:monospace;
+    font-family: monospace;
     font-size: small;
 }
+
 header {
     text-align: center;
     margin-top: 2rem;
@@ -140,6 +142,7 @@ article {
     text-align: center;
     font-size: 25px;
 }
+
 p {
     font-size: larger;
     letter-spacing: inherit;
@@ -153,6 +156,14 @@ p {
     justify-content: center;
     margin: 100px;
 }
+.contenedorInfo{
+
+    padding-top: 5px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
 .contenedorPropaganda {
     padding-top: 50px;
     border: 10px;
