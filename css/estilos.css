@@ -1,296 +1,197 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
 body {
-    width: 100%;
-    height: 100%;
-    background-color: mistyrose;
-    font-family: inherit;
-    font-size: 1rem;
-
-}
-
-h1 {
+  width: 100%;
+  height: 100%;
+  background-color: mistyrose;
+  font-family: inherit;
+  font-size: 1rem;
+  overflow-x: hidden; }
+  body h1 {
     text-align: center;
     padding: 10px;
     margin: 40px;
     list-style: none;
     position: static;
-    letter-spacing: 2px;
-
-}
-
-h6 {
+    letter-spacing: 2px; }
+  body h6 {
     justify-content: center;
     font-family: monospace;
-    font-size: small;
-}
+    font-size: small; }
+  body p {
+    font-size: larger;
+    letter-spacing: inherit;
+    line-height: 1.7; }
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
+  gap: 20px;
+  padding: 20px; }
+  main section {
+    background-color: #f3e5e3;
+    padding: 20px;
+    text-align: center; }
 
 header {
-    text-align: center;
-    margin-top: 2rem;
-    padding: 10px;
-}
-
-.titulo {
-    font-size: 3rem;
-    text-align: center
-}
+  text-align: center;
+  margin-top: 2rem;
+  padding: 10px; }
+  header .titulo {
+    font-size: 3rem; }
 
 .contenedorNav {
-    font-size: 1.5rem;
-    letter-spacing: 2px;
-    border: solid cornsilk;
-    border-radius: 10px;
-    text-align: center;
-
-}
-
-.container {
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  border: solid cornsilk;
+  border-radius: 10px;
+  text-align: center; }
+  .contenedorNav .container {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr auto;
-    min-height: 100vh;
-}
+    min-height: 100vh; }
+  .contenedorNav img {
+    max-width: 100%;
+    height: auto; }
+  .contenedorNav .imagenHome {
+    border-radius: 10px; }
 
 img {
-    max-width: 100%;
-    height: auto;
-
-}
-
-.imagenHome {
-    border-radius: 10px;
-}
-
-main {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, auto);
-    gap: 20px;
-    padding: 20px;
-}
-
-section {
-    background-color: rgb(243, 229, 227);
-    padding: 20px;
-    text-align: center;
-}
-
-@media screen and (max-width: 768px) {
-    .contenedorHome {
-        grid-template-rows: auto;
-    }
-
-    section {
-        padding: 10px;
-    }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    .contenedorHome {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto auto;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    .contenedorHome {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto;
-    }
-}
-
-@media (max-width: 768px) {
-    .contenedorNav {
-        border: none;
-    }
-}
+  max-width: 100%;
+  height: auto; }
+  img .imagenHome {
+    border-radius: 10px; }
 
 .menu {
-    display: flex;
-    padding: 1rem;
-    margin: 40px;
-    list-style: none;
-    position: static;
-    letter-spacing: 2px;
-    justify-content: space-evenly;
-    border: solid 2px black;
-    align-items: center;
-    font-size: 1.2rem;
-}
-
-.menu a {
+  display: flex;
+  padding: 1rem;
+  margin: 40px;
+  list-style: none;
+  position: static;
+  letter-spacing: 2px;
+  justify-content: space-evenly;
+  border: solid 2px rgba(94, 34, 34, 0.158);
+  align-items: center;
+  font-size: 1.2rem; }
+  .menu a {
     text-decoration: none;
     color: #333;
-    transition: color 0.3s ease-in-out;
-}
+    transition: color 0.3s ease-in-out; }
+    .menu a:hover {
+      color: #5e5b5b; }
 
-.menu a:hover {
-    color: rgb(94, 91, 91);
-}
-
-article {
-    text-align: center;
-    font-size: 25px;
-}
-
-p {
-    font-size: larger;
-    letter-spacing: inherit;
-    line-height: 1.7;
-
-}
-
-.contenedorAbrigos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 100px;
-}
-.contenedorInfo{
-
-    padding-top: 5px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    padding-left: 20px;
-}
+.contenedorInfo {
+  padding-top: 5px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px; }
 
 .contenedorPropaganda {
-    padding-top: 50px;
-    border: 10px;
-    display: flex;
-    justify-content: center;
-}
+  padding-top: 50px;
+  border: 10px;
+  display: flex;
+  justify-content: center; }
 
-.imagenChica {
-    width: 500px;
-    height: 500px;
-    padding-top: 5px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    padding-left: 20px;
-}
-
-.contenedorRemeras {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.imagenRemera {
-    width: 550px;
-    height: 550px;
-    padding-top: 5px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    padding-left: 20px;
-
-}
-
-.contenedorPantalones {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.imagenPantalon {
-    width: 550px;
-    height: 550px;
-    padding-top: 5px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-
-}
-
+.contenedorAbrigos,
+.contenedorRemeras,
+.contenedorPantalones,
 .contenedorIngresos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 100px; }
 
+.imagenHome,
+.imagenChica,
+.imagenRemera,
+.imagenPantalon,
 .imagenIngresos {
-    width: 550px;
-    height: 550px;
-    padding-top: 5px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-}
+  width: 550px;
+  height: 550px;
+  padding: 5px 20px; }
+
+.imagenHome {
+  border-radius: 10px; }
+
+.contenedorTerminos,
+.contenedorNosotros,
+.contenedorPreguntas {
+  flex-wrap: wrap;
+  padding: 25px;
+  margin: 20px; }
 
 footer {
-    max-width: 100%;
-    margin: 0 auto;
-    background-color: rosybrown;
-    color: black;
-    padding: 20px 0;
-    text-align: center;
-
-}
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: rosybrown;
+  color: #332e2e;
+  color: #333;
+  padding: 20px 0;
+  text-align: center;
+  transition: background-color 0.3s ease; }
+  footer:hover {
+    background-color: #a96f6f;
+    color: #4e4646; }
+  footer .footerLink {
+    text-decoration: none;
+    color: #090606;
+    transition: color 0.3s ease;
+    padding: 3px; }
+    footer .footerLink:hover {
+      color: bisque; }
 
 .contenedorFinal {
-    justify-content: center;
-    flex-wrap: wrap;
-
-}
-
-.footerLink {
-    padding-right: 10px;
-    padding-left: 10px;
-    color: black
-}
-
-.contenedorTerminos {
-    flex-wrap: wrap;
-    padding: 25px;
-    margin: 20px;
-}
+  justify-content: center;
+  flex-wrap: wrap; }
 
 .parrafoContenido {
-    margin: 5px;
-    padding: 5px;
-    text-align: justify;
-    line-height: 1.5;
-}
-
-.contenedorNosotros {
-    padding: 15px;
-    margin: 20px;
-    font-size: larger;
-}
-
-.contenedorPreguntas {
-    padding: 25px;
-    margin: 20px;
-    font-size: 16px;
-}
-
+  margin: 5px;
+  padding: 5px;
+  text-align: justify;
+  line-height: 1.5; }
 
 .contenedorForm {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
-}
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
 
 .comprarBoton {
-    background-color: rgb(210, 154, 154);
-    color: #212121;
-    padding: 10px 20px;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+  background-color: #d29a9a;
+  color: #212121;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 .precio,
 .cuotas {
-    margin-bottom: 5px;
-    font-size: medium;
-}
+  margin-bottom: 5px;
+  font-size: medium; }
+
+@media screen and (max-width: 768px) {
+  .contenedorHome {
+    grid-template-rows: auto; }
+  section {
+    padding: 10px; } }
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .contenedorHome {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto; } }
+
+@media screen and (min-width: 1024px) {
+  .contenedorHome {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto; } }
+
+@media (max-width: 768px) {
+  .contenedorNav {
+    border: none; } }
