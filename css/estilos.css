@@ -55,17 +55,10 @@ header {
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr auto;
     min-height: 100vh; }
-  .contenedorNav img {
-    max-width: 100%;
-    height: auto; }
-  .contenedorNav .imagenHome {
-    border-radius: 10px; }
 
 img {
   max-width: 100%;
   height: auto; }
-  img .imagenHome {
-    border-radius: 10px; }
 
 .menu {
   display: flex;
