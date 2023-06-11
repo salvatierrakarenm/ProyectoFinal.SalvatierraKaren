@@ -26,6 +26,10 @@ body {
     letter-spacing: inherit;
     line-height: 1.7; }
 
+h3 {
+  text-align: center;
+  margin: 20px; }
+
 main {
   display: grid;
   grid-template-columns: 1fr;
@@ -107,9 +111,6 @@ img {
   width: 550px;
   height: 550px;
   padding: 5px 20px; }
-
-.imagenHome {
-  border-radius: 10px; }
 
 .contenedorTerminos,
 .contenedorNosotros,
