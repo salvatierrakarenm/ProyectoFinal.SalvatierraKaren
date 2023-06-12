@@ -171,21 +171,31 @@ footer {
   font-size: medium; }
 
 @media screen and (max-width: 768px) {
+  html {
+    overflow-x: hidden; }
   .contenedorHome {
     grid-template-rows: auto; }
   section {
     padding: 10px; } }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+  html {
+    overflow-x: hidden; }
   .contenedorHome {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto auto; } }
 
 @media screen and (min-width: 1024px) {
+  html {
+    overflow-x: hidden; }
   .contenedorHome {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto; } }
+    grid-template-rows: auto;
+    overflow-x: hidden; } }
 
 @media (max-width: 768px) {
+  html {
+    overflow-x: hidden; }
   .contenedorNav {
-    border: none; } }
+    border: none;
+    overflow-x: hidden; } }
