@@ -134,6 +134,14 @@ main {
   padding: 5px 20px;
   border-radius: 4rem; }
 
+.carritoCompra {
+  text-align: center;
+  margin: 1rem;
+  padding: 1rem; }
+
+.carritoIngreso {
+  max-width: 500px; }
+
 footer {
   max-width: 100%;
   margin: 0 auto;
