@@ -11,64 +11,12 @@ $menu-link-color: $color_1;
 $menu-link-hover-color: $color_2;
 $link-color: rgb(9, 6, 6);
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    width: 100%;
-    height: 100%;
-    background-color: mistyrose;
-    font-family: inherit;
-    font-size: 1rem;
-    overflow-x: hidden;
-
-
-    h1 {
-        text-align: center;
-        padding: 10px;
-        margin: 40px;
-        list-style: none;
-        position: static;
-        letter-spacing: 2px;
-    }
-
-    h6 {
-        justify-content: center;
-        font-family: monospace;
-        font-size: small;
-    }
-
-    p {
-        font-size: larger;
-        letter-spacing: inherit;
-        line-height: 1.7;
-    }
-
-}
-
-h3 {
-    text-align: center;
-    margin: 20px;
-
-}
-
-main {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, auto);
-    gap: 20px;
-    padding: 20px;
-
-
-    section {
-        background-color: $background-color_1;
-        padding: 20px;
-        text-align: center;
-    }
-}
+@import "body";
+@import "nav";
+@import "main";
+@import "contenedor";
+@import "footer";
+@import "media";
 
 @mixin text-styling {
     text-align: center;
@@ -84,6 +32,12 @@ header {
     }
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+
+}
+
 .contenedorNav {
     font-size: 1.5rem;
     letter-spacing: 2px;
@@ -97,185 +51,5 @@ header {
         grid-template-rows: auto 1fr auto;
         min-height: 100vh;
     }
-
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-
-}
-
-.menu {
-    display: flex;
-    padding: 1rem;
-    margin: 40px;
-    list-style: none;
-    position: static;
-    letter-spacing: 2px;
-    justify-content: space-evenly;
-    border: solid 2px $menu-border-color;
-    align-items: center;
-    font-size: 1.2rem;
-
-    a {
-        text-decoration: none;
-        color: $menu-link-color;
-        transition: color 0.3s ease-in-out;
-
-        &:hover {
-            color: $menu-link-hover-color;
-        }
-    }
-}
-
-.contenedorInfo {
-    padding-top: 5px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    padding-left: 20px;
-}
-
-.contenedorPropaganda {
-    padding-top: 50px;
-    border: 10px;
-    display: flex;
-    justify-content: center;
-}
-
-.contenedorAbrigos,
-.contenedorRemeras,
-.contenedorPantalones,
-.contenedorIngresos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 100px;
-}
-
-.imagenHome,
-.imagenChica,
-.imagenRemera,
-.imagenPantalon,
-.imagenIngresos {
-    width: 550px;
-    height: 550px;
-    padding: 5px 20px;
-}
-
-.contenedorTerminos,
-.contenedorNosotros,
-.contenedorPreguntas {
-    flex-wrap: wrap;
-    padding: 25px;
-    margin: 20px;
-}
-
-footer {
-    max-width: 100%;
-    margin: 0 auto;
-    background-color: $background-color_2;
-    color: $color_3;
-    color: #333;
-    padding: 20px 0;
-    text-align: center;
-    transition: background-color 0.3s ease;
-
-    &:hover {
-        background-color: darken($background-color_2, 10%);
-        color: lighten($color_3, 10%);
-    }
-
-    .footerLink {
-        text-decoration: none;
-        color: $link-color;
-        transition: color 0.3s ease;
-        padding: 3px;
-
-        &:hover {
-            color: bisque;
-        }
-    }
-}
-
-.contenedorFinal {
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.parrafoContenido {
-    margin: 5px;
-    padding: 5px;
-    text-align: justify;
-    line-height: 1.5;
-}
-
-.contenedorForm {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.comprarBoton {
-    background-color: $background-color_3;
-    color: $color_4;
-    padding: 10px 20px;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.precio,
-.cuotas {
-    margin-bottom: 5px;
-    font-size: medium;
-}
-
-@media screen and (max-width: 768px) {
-    html {
-        overflow-x: hidden;
-    }
-
-    .contenedorHome {
-        grid-template-rows: auto;
-    }
-    section {
-        padding: 10px;
-    }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    html {
-        overflow-x: hidden;
-    }
-    .contenedorHome {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto auto;
-    }
-}
-
-
-@media screen and (min-width: 1024px) {
-    html{
-        overflow-x: hidden;
-    }
-
-    .contenedorHome {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto;
-        overflow-x: hidden;
-    }
-}
-
-@media (max-width: 768px) {
-html{
-    overflow-x: hidden;
-}
-    .contenedorNav {
-        border: none;
-        overflow-x: hidden;
-    }
-}

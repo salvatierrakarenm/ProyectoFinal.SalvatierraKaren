@@ -1,0 +1,23 @@
+
+.menu {
+    display: flex;
+    padding: 1rem;
+    margin: 40px;
+    list-style: none;
+    position: static;
+    letter-spacing: 2px;
+    justify-content: space-evenly;
+    border: solid 2px $menu-border-color;
+    align-items: center;
+    font-size: 1.2rem;
+
+    a {
+        text-decoration: none;
+        color: $menu-link-color;
+        transition: color 0.3s ease-in-out;
+
+        &:hover {
+            color: $menu-link-hover-color;
+        }
+    }
+}

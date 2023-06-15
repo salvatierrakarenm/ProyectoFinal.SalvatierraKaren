@@ -1,0 +1,26 @@
+footer {
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: $background-color_2;
+    color: $color_3;
+    color: #333;
+    padding: 20px 0;
+    text-align: center;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: darken($background-color_2, 10%);
+        color: lighten($color_3, 10%);
+    }
+
+    .footerLink {
+        text-decoration: none;
+        color: $link-color;
+        transition: color 0.3s ease;
+        padding: 3px;
+
+        &:hover {
+            color: bisque;
+        }
+    }
+}

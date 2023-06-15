@@ -1,0 +1,15 @@
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    gap: 20px;
+    padding: 20px;
+
+
+    section {
+        background-color: $background-color_1;
+        padding: 20px;
+        text-align: center;
+    }
+}

@@ -30,40 +30,6 @@ h3 {
   text-align: center;
   margin: 20px; }
 
-main {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, auto);
-  gap: 20px;
-  padding: 20px; }
-  main section {
-    background-color: #f3e5e3;
-    padding: 20px;
-    text-align: center; }
-
-header {
-  text-align: center;
-  margin-top: 2rem;
-  padding: 10px; }
-  header .titulo {
-    font-size: 3rem; }
-
-.contenedorNav {
-  font-size: 1.5rem;
-  letter-spacing: 2px;
-  border: solid cornsilk;
-  border-radius: 10px;
-  text-align: center; }
-  .contenedorNav .container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr auto;
-    min-height: 100vh; }
-
-img {
-  max-width: 100%;
-  height: auto; }
-
 .menu {
   display: flex;
   padding: 1rem;
@@ -82,6 +48,33 @@ img {
     .menu a:hover {
       color: #5e5b5b; }
 
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
+  gap: 20px;
+  padding: 20px; }
+  main section {
+    background-color: #f3e5e3;
+    padding: 20px;
+    text-align: center; }
+
+.contenedorTerminos,
+.contenedorNosotros,
+.contenedorPreguntas {
+  flex-wrap: wrap;
+  padding: 25px;
+  margin: 20px; }
+
+.contenedorAbrigos,
+.contenedorRemeras,
+.contenedorPantalones,
+.contenedorIngresos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 100px; }
+
 .contenedorInfo {
   padding-top: 5px;
   padding-right: 20px;
@@ -94,60 +87,9 @@ img {
   display: flex;
   justify-content: center; }
 
-.contenedorAbrigos,
-.contenedorRemeras,
-.contenedorPantalones,
-.contenedorIngresos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 100px; }
-
-.imagenHome,
-.imagenChica,
-.imagenRemera,
-.imagenPantalon,
-.imagenIngresos {
-  width: 550px;
-  height: 550px;
-  padding: 5px 20px; }
-
-.contenedorTerminos,
-.contenedorNosotros,
-.contenedorPreguntas {
-  flex-wrap: wrap;
-  padding: 25px;
-  margin: 20px; }
-
-footer {
-  max-width: 100%;
-  margin: 0 auto;
-  background-color: rosybrown;
-  color: #332e2e;
-  color: #333;
-  padding: 20px 0;
-  text-align: center;
-  transition: background-color 0.3s ease; }
-  footer:hover {
-    background-color: #a96f6f;
-    color: #4e4646; }
-  footer .footerLink {
-    text-decoration: none;
-    color: #090606;
-    transition: color 0.3s ease;
-    padding: 3px; }
-    footer .footerLink:hover {
-      color: bisque; }
-
 .contenedorFinal {
   justify-content: center;
   flex-wrap: wrap; }
-
-.parrafoContenido {
-  margin: 5px;
-  padding: 5px;
-  text-align: justify;
-  line-height: 1.5; }
 
 .contenedorForm {
   display: flex;
@@ -169,6 +111,41 @@ footer {
 .cuotas {
   margin-bottom: 5px;
   font-size: medium; }
+
+.parrafoContenido {
+  margin: 5px;
+  padding: 5px;
+  text-align: justify;
+  line-height: 1.5; }
+
+.imagenHome,
+.imagenChica,
+.imagenRemera,
+.imagenPantalon,
+.imagenIngresos {
+  width: 550px;
+  height: 550px;
+  padding: 5px 20px; }
+
+footer {
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: rosybrown;
+  color: #332e2e;
+  color: #333;
+  padding: 20px 0;
+  text-align: center;
+  transition: background-color 0.3s ease; }
+  footer:hover {
+    background-color: #a96f6f;
+    color: #4e4646; }
+  footer .footerLink {
+    text-decoration: none;
+    color: #090606;
+    transition: color 0.3s ease;
+    padding: 3px; }
+    footer .footerLink:hover {
+      color: bisque; }
 
 @media screen and (max-width: 768px) {
   html {
@@ -199,3 +176,26 @@ footer {
   .contenedorNav {
     border: none;
     overflow-x: hidden; } }
+
+header {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 10px; }
+  header .titulo {
+    font-size: 3rem; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+.contenedorNav {
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  border: solid cornsilk;
+  border-radius: 10px;
+  text-align: center; }
+  .contenedorNav .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh; }
