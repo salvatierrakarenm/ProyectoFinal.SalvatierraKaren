@@ -21,6 +21,8 @@ body {
     justify-content: center;
     font-family: monospace;
     font-size: small; }
+  body h4 {
+    font-size: medium; }
   body p {
     font-size: larger;
     letter-spacing: inherit;
@@ -118,14 +120,19 @@ main {
   text-align: justify;
   line-height: 1.5; }
 
-.imagenHome,
+.imagenHome {
+  width: 550px;
+  height: 550px;
+  padding: 5px 20px; }
+
 .imagenChica,
 .imagenRemera,
 .imagenPantalon,
 .imagenIngresos {
   width: 550px;
   height: 550px;
-  padding: 5px 20px; }
+  padding: 5px 20px;
+  border-radius: 4rem; }
 
 footer {
   max-width: 100%;
