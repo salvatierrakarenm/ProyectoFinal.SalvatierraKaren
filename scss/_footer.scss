@@ -24,3 +24,16 @@ footer {
         }
     }
 }
+
+.redes {
+    justify-content: center;
+    list-style: none;
+    display: flex;
+    margin: 15px;
+
+    .linkRedes {
+        padding: 5px;
+        margin: 5px;
+        color: oldlace;
+    }
+}

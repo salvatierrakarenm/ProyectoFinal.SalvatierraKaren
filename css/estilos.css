@@ -147,6 +147,16 @@ footer {
     footer .footerLink:hover {
       color: bisque; }
 
+.redes {
+  justify-content: center;
+  list-style: none;
+  display: flex;
+  margin: 15px; }
+  .redes .linkRedes {
+    padding: 5px;
+    margin: 5px;
+    color: oldlace; }
+
 @media screen and (max-width: 768px) {
   html {
     overflow-x: hidden; }
