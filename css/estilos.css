@@ -21,8 +21,6 @@ body {
     justify-content: center;
     font-family: monospace;
     font-size: small; }
-  body h4 {
-    font-size: medium; }
   body p {
     font-size: larger;
     letter-spacing: inherit;
@@ -134,13 +132,10 @@ main {
   padding: 5px 20px;
   border-radius: 4rem; }
 
-.carritoCompra {
-  text-align: center;
+.contenedorCarrito {
+  text-align: justify;
   margin: 1rem;
   padding: 1rem; }
-
-.carritoIngreso {
-  max-width: 500px; }
 
 footer {
   max-width: 100%;

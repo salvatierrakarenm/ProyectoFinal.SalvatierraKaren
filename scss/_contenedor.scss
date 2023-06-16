@@ -29,15 +29,18 @@
     display: flex;
     justify-content: center;
 }
+
 .contenedorFinal {
     justify-content: center;
     flex-wrap: wrap;
 }
+
 .contenedorForm {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
+
 .comprarBoton {
     background-color: $background-color_3;
     color: $color_4;
@@ -63,7 +66,7 @@
     line-height: 1.5;
 }
 
-.imagenHome{
+.imagenHome {
     width: 550px;
     height: 550px;
     padding: 5px 20px;
@@ -79,11 +82,9 @@
     border-radius: 4rem;
 
 }
-.carritoCompra{
-    text-align: center;
+
+.contenedorCarrito {
+    text-align: justify;
     margin: 1rem;
     padding: 1rem;
-}
-.carritoIngreso{
-    max-width: 500px;
 }
