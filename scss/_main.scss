@@ -6,10 +6,13 @@ main {
     gap: 20px;
     padding: 20px;
 
-
     section {
         background-color: $background-color_1;
         padding: 20px;
         text-align: center;
     }
+    .contenedorContacto{
+        justify-self: center;
+    }
+
 }

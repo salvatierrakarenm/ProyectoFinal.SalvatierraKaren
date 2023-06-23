@@ -58,6 +58,8 @@ main {
     background-color: #f3e5e3;
     padding: 20px;
     text-align: center; }
+  main .contenedorContacto {
+    justify-self: center; }
 
 .contenedorTerminos,
 .contenedorNosotros,
@@ -136,6 +138,10 @@ main {
   text-align: justify;
   margin: 1rem;
   padding: 1rem; }
+
+.contenedorAcceso {
+  display: flex;
+  justify-content: space-around; }
 
 footer {
   max-width: 100%;
